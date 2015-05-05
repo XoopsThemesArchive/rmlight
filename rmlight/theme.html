@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="Red México Soft <www.redmexico.com.mx>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<{if $xoops_pagetitle=="Foros" }>
+	<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>forums.css" />
+<{/if}>
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table width="800"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="305"><img src="<{$xoops_imageurl}>images/logo.gif" width="294" height="68" /></td>
+    <td width="6" valign="middle"><img src="<{$xoops_imageurl}>images/sep_top.gif" width="6" height="63" /></td>
+    <td width="180" align="left" valign="middle"><img src="<{$xoops_imageurl}>images/slogan.gif" width="180" height="28" /></td>
+    <td width="206" align="right" valign="top" class="linkBlue"><a href="<{$xoops_url}>/modules/contact">Cont&aacute;ctos</a> </td>
+    <td width="103" align="right" valign="top" class="linkGray"><a href="<{$xoops_url}>/user.php">Mi Cuenta</a></td>
+  </tr>
+  <tr>
+    <td height="10" colspan="5"><img src="images/pixel.gif" width="1" height="1" /></td>
+  </tr>
+  <tr>
+    <td valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="150" valign="top">
+		<!-- incio de los bloques izquierdos -->
+		<{foreach item=block from=$xoops_lblocks}>
+		<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="blockLeft">
+          <tr>
+            <td width="8"><img src="<{$xoops_imageurl}>images/b_ltop.gif" width="8" height="8" /></td>
+            <td class="b_top"><img src="<{$xoops_imageurl}>images/b_top.gif" width="29" height="8" /></td>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rtop.gif" width="8" height="8" /></td>
+          </tr>
+          <tr>
+            <td class="b_left"><img src="<{$xoops_imageurl}>images/b_left.gif" width="8" height="21" /></td>
+            <td><span class="blocktitle"><{$block.title}></span><br><br>
+			<{$block.content}></td>
+            <td class="b_right"><img src="<{$xoops_imageurl}>images/b_right.gif" width="8" height="22" /></td>
+          </tr>
+          <tr>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_lbot.gif" width="8" height="8" /></td>
+            <td class="b_bottom"><img src="<{$xoops_imageurl}>images/b_bot.gif" width="29" height="8" /></td>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rbot.gif" width="8" height="8" /></td>
+          </tr>
+        </table>
+		<{/foreach}>
+		<!-- Fin de los bloques izquierdos -->		</td>
+        <td width="5">&nbsp;</td>
+        <td width="150" valign="top">
+		<!-- incio de los bloques derechos -->
+		<{foreach item=block from=$xoops_rblocks}>
+		<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="blockLeft">
+          <tr>
+            <td width="8"><img src="<{$xoops_imageurl}>images/b_ltop.gif" width="8" height="8" /></td>
+            <td class="b_top"><img src="<{$xoops_imageurl}>images/b_top.gif" width="29" height="8" /></td>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rtop.gif" width="8" height="8" /></td>
+          </tr>
+          <tr>
+            <td class="b_left"><img src="<{$xoops_imageurl}>images/b_left.gif" width="8" height="21" /></td>
+            <td><span class="blocktitle"><{$block.title}></span><br><br>
+			<{$block.content}></td>
+            <td class="b_right"><img src="<{$xoops_imageurl}>images/b_right.gif" width="8" height="22" /></td>
+          </tr>
+          <tr>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_lbot.gif" width="8" height="8" /></td>
+            <td class="b_bottom"><img src="<{$xoops_imageurl}>images/b_bot.gif" width="29" height="8" /></td>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rbot.gif" width="8" height="8" /></td>
+          </tr>
+        </table>
+		<{/foreach}>
+		<!-- Fin de los bloques derechos -->
+		</td>
+      </tr>
+    </table></td>
+    <td>&nbsp;</td>
+    <td colspan="3" valign="top">
+	<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="4" class="navBar">
+      <tr align="center">
+        <td bgcolor="#C0C0C0"><a href="<{$xoops_url}>">Inicio</a></td>
+        <td bgcolor="#89C845"><a href="<{$xoops_url}>/modules/newbb">Foros</a></td>
+        <td bgcolor="#6CCEf1"><a href="<{$xoops_url}>/modules/mydownloads">Descargas</a></td>
+        <td bgcolor="#f9cc00"><a href="<{$xoops_url}>/modules/mylinks">Enlaces</a></td>
+        <td bgcolor="#89C845"><a href="<{$xoops_url}>/modules/rmlib">Biblioteca</a></td>
+        <td bgcolor="#6CCEF1"><a href="<{$xoops_url}>/modules/rmgallery">Galer&iacute;as</a></td>
+      </tr>
+    </table>      <{$xoops_contents}><br>
+	<{foreach item=block from=$xoops_ccblocks}>
+    <table width="100%"  border="0" cellspacing="0" cellpadding="0" class="blockLeft">
+      <tr>
+        <td width="8"><img src="<{$xoops_imageurl}>images/b_ltop.gif" width="8" height="8" /></td>
+        <td class="b_top"><img src="<{$xoops_imageurl}>images/b_top.gif" width="29" height="8" /></td>
+        <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rtop.gif" width="8" height="8" /></td>
+      </tr>
+      <tr>
+        <td class="b_left"><img src="<{$xoops_imageurl}>images/b_left.gif" width="8" height="21" /></td>
+        <td><span class="blocktitle"><{$block.title}></span><br />
+            <br />
+<{$block.content}></td>
+        <td class="b_right"><img src="<{$xoops_imageurl}>images/b_right.gif" width="8" height="22" /></td>
+      </tr>
+      <tr>
+        <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_lbot.gif" width="8" height="8" /></td>
+        <td class="b_bottom"><img src="<{$xoops_imageurl}>images/b_bot.gif" width="29" height="8" /></td>
+        <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rbot.gif" width="8" height="8" /></td>
+      </tr>
+    </table>
+	<{/foreach}><br>
+	<!-- inicio de los bloques centrales laterales -->
+	<{if $xoops_showcblock == 1}>
+	<table width="100%"  border="0" cellspacing="0" cellpadding="4">
+      <tr>
+        <td valign="top">
+		<!-- bloques centrales izquierdos -->
+		<{foreach item=block from=$xoops_clblocks}>
+		<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="blockLeft">
+          <tr>
+            <td width="8"><img src="<{$xoops_imageurl}>images/b_ltop.gif" width="8" height="8" /></td>
+            <td class="b_top"><img src="<{$xoops_imageurl}>images/b_top.gif" width="29" height="8" /></td>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rtop.gif" width="8" height="8" /></td>
+          </tr>
+          <tr>
+            <td class="b_left"><img src="<{$xoops_imageurl}>images/b_left.gif" width="8" height="21" /></td>
+            <td><span class="blocktitle"><{$block.title}></span><br />
+                <br />
+<{$block.content}></td>
+            <td class="b_right"><img src="<{$xoops_imageurl}>images/b_right.gif" width="8" height="22" /></td>
+          </tr>
+          <tr>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_lbot.gif" width="8" height="8" /></td>
+            <td class="b_bottom"><img src="<{$xoops_imageurl}>images/b_bot.gif" width="29" height="8" /></td>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rbot.gif" width="8" height="8" /></td>
+          </tr>
+        </table>
+		<{/foreach}>
+		<!-- fin de bloques centrales izquierdos -->		</td>
+        <td valign="top">
+		<!-- bloques centrales derechos -->
+		<{foreach item=block from=$xoops_crblocks}>
+		<table width="100%"  border="0" cellspacing="0" cellpadding="0" class="blockLeft">
+          <tr>
+            <td width="8"><img src="<{$xoops_imageurl}>images/b_ltop.gif" width="8" height="8" /></td>
+            <td class="b_top"><img src="<{$xoops_imageurl}>images/b_top.gif" width="29" height="8" /></td>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rtop.gif" width="8" height="8" /></td>
+          </tr>
+          <tr>
+            <td class="b_left"><img src="<{$xoops_imageurl}>images/b_left.gif" width="8" height="21" /></td>
+            <td><span class="blocktitle"><{$block.title}></span><br />
+                <br />
+<{$block.content}></td>
+            <td class="b_right"><img src="<{$xoops_imageurl}>images/b_right.gif" width="8" height="22" /></td>
+          </tr>
+          <tr>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_lbot.gif" width="8" height="8" /></td>
+            <td class="b_bottom"><img src="<{$xoops_imageurl}>images/b_bot.gif" width="29" height="8" /></td>
+            <td width="8" height="8"><img src="<{$xoops_imageurl}>images/b_rbot.gif" width="8" height="8" /></td>
+          </tr>
+        </table>
+		<{/foreach}>
+		<!-- fin de bloques centrales derechos -->		</td>
+      </tr>
+    </table>
+	<{/if}>
+	<!-- fin de los bloques centrales laterales -->
+	</td>
+  </tr>
+  <tr>
+    <td colspan="5" class="bottomBar"><img src="<{$xoops_imageurl}>images/pixel.gif" width="1" height="1"></td>
+  </tr>
+  <tr>
+    <td colspan="5" class="navBottom"><a href="<{$xoops_url}>">Inicio</a> &nbsp;| &nbsp;<a href="<{$xoops_url}>/modules/newbb">Foros</a> &nbsp;| &nbsp;<a href="<{$xoops_url}>/modules/mydownloads">Descargas</a> &nbsp;| &nbsp;<a href="<{$xoops_url}>/modules/mylinks">Enlaces</a> &nbsp;| &nbsp;<a href="<{$xoops_url}>/modules/contact">Cont&aacute;ctos</a> &nbsp;| &nbsp;<a href="<{$xoops_url}>/user.php">Mi Cuenta</a> &nbsp;| &nbsp;<a href="<{$xoops_url}>/modules/sections">Secciones</a> &nbsp;| &nbsp;<a href="<{$xoops_url}>/modules/xoopspartners">Sitios Asociados</a></td>
+  </tr>
+  <tr>
+    <td colspan="5">CopyRight &copy; 2005. <a href="www.redmexico.com.mx">Red M&eacute;xico Soft</a>. Tema dise&ntilde;ado por <a href="../../../../www.redmexico.com.mx/default.htm">Red M&eacute;xico Soft</a>. Powered by <a href="../../../../www.xoops.org/default.htm">XOOPS</a> </td>
+  </tr>
+</table>
+</body>
+</html>
+
+<script language="JavaScript">
+<!--
+var SymRealOnLoad;
+var SymRealOnUnload;
+
+function SymOnUnload()
+{
+  window.open = SymWinOpen;
+  if(SymRealOnUnload != null)
+     SymRealOnUnload();
+}
+
+function SymOnLoad()
+{
+  if(SymRealOnLoad != null)
+     SymRealOnLoad();
+  window.open = SymRealWinOpen;
+  SymRealOnUnload = window.onunload;
+  window.onunload = SymOnUnload;
+}
+
+SymRealOnLoad = window.onload;
+window.onload = SymOnLoad;
+
+//-->
+</script>
+
